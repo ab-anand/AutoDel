@@ -77,17 +77,17 @@ class AutoDel:
 
         # get the list of files in the folder
         all_files = []
-        for root, dirs, files in os.walk(loc):
+        for root, dirs, files in os.walk(loc, topdown=True):
             all_files = files
             break
 
         # sort files accordingly
         if param == "Above specified size":
-            sorted_files = sorted(all_files, key = os.path.abspath.getsize, reverse=True)
-            no_files = self.delete(sorted_files, True, loc, desired_size_in_bytes)
+            # sorted_files = sorted(all_files, key = os.path.abspath.getsize, reverse=True)
+            no_files = self.delete(all_files, True, loc, desired_size_in_bytes)
         else:
-            sorted_files = sorted(all_files, key = os.path.getsize)
-            no_files =self.delete(sorted_files, False, loc, desired_size_in_bytes)
+            #sorted_files = sorted(all_files, key = os.path.getsize)
+            no_files =self.delete(all_files, False, loc, desired_size_in_bytes)
 
         notify = "{} files deleted!".format(no_files)
         tkMessageBox.showinfo("Notification", notify)
@@ -101,19 +101,23 @@ class AutoDel:
                 abspath = dir + '/' + file
                 print abspath
                 if os.path.getsize(abspath) > size:
-                    files_count += 1
-                    os.remove(abspath)
-                else:
-                    break
+                    try:
+                        os.remove(abspath)
+                        files_count += 1
+                    except:
+                        pass
+
         else:
             for file in files:
                 abspath = dir + '\\' + file
                 # print abspath
                 if os.path.getsize(abspath) < size:
-                    files_count += 1
-                    os.remove(abspath)
-                else:
-                    break
+                    try:
+                        os.remove(abspath)
+                        files_count += 1
+                    except:
+                        pass
+
 
         return files_count
 
