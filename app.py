@@ -102,7 +102,6 @@ class AutoDel:
         if reverse:
             for file in files:
                 abspath = dir + '/' + file
-                print abspath
                 if os.path.getsize(abspath) > size:
                     try:
                         os.remove(abspath)
@@ -113,7 +112,6 @@ class AutoDel:
         else:
             for file in files:
                 abspath = dir + '\\' + file
-                # print abspath
                 if os.path.getsize(abspath) < size:
                     try:
                         os.remove(abspath)
