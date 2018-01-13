@@ -50,9 +50,9 @@ class AutoDel:
 
         self.label_parameter = Label(master, text="Delete files of size ")
         self.label_parameter.grid(row=4, columnspan=2)
-        self.options_parameter = ['Above specified size', 'Below specified size']
+        self.options_parameter = ['All Files', 'Above specified size', 'Below specified size']
         self.param_var = StringVar()
-        self.param_var.set('Below specified size')
+        self.param_var.set('All Files')
         self.drop_param = OptionMenu(master, self.param_var, *self.options_parameter)
         self.drop_param.grid(row=5, columnspan=2)
 
@@ -85,8 +85,11 @@ class AutoDel:
         if param == "Above specified size":
             # sorted_files = sorted(all_files, key = os.path.abspath.getsize, reverse=True)
             no_files = self.delete(all_files, True, loc, desired_size_in_bytes)
+        elif param ==  'All Files':
+            # To delete all files at once
+            no_files = self.delete(all_files, True, loc, 0)
         else:
-            #sorted_files = sorted(all_files, key = os.path.getsize)
+            # sorted_files = sorted(all_files, key = os.path.getsize)
             no_files =self.delete(all_files, False, loc, desired_size_in_bytes)
 
         notify = "{} files deleted!".format(no_files)
@@ -99,7 +102,6 @@ class AutoDel:
         if reverse:
             for file in files:
                 abspath = dir + '/' + file
-                print abspath
                 if os.path.getsize(abspath) > size:
                     try:
                         os.remove(abspath)
@@ -110,7 +112,6 @@ class AutoDel:
         else:
             for file in files:
                 abspath = dir + '\\' + file
-                # print abspath
                 if os.path.getsize(abspath) < size:
                     try:
                         os.remove(abspath)
