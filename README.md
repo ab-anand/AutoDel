@@ -1,3 +1,4 @@
 # AutoDel
 ![](Capture.PNG)
-a desktop app to delete multiple files using size parameter
+
+<i>A desktop app to delete thousands of files in the blink of an eye using size parameter</i>
