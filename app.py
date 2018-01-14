@@ -18,7 +18,7 @@ class AutoDel:
 
         self.entry_loc = Entry(master, width=27)
         self.entry_loc.grid(row=0, column=1, pady=10, sticky=W)
-        self.entry_loc.bind_class("Entry", "<Button-3><ButtonRelease-3>", show_menu)
+        self.entry_loc.bind_class("Entry", "<Button-3><ButtonRelease-3>", self.show_menu)
 
         self.label_ex_loc = Label(master, text="Example of a folder location >>")
         self.label_ex_loc.grid(row=1, column=0)
@@ -35,14 +35,6 @@ class AutoDel:
         self.scale = Scale(master, from_=0, to=1000, orient=HORIZONTAL, length=200, troughcolor='blue')
         self.scale.grid(row=3, column=0, columnspan=2, pady=10, padx=25, sticky=W)
 
-        # manual entry
-        # self.entry_size = Entry(master)
-        # self.entry_size.grid(row=3, column=1, pady=10)
-        #print self.scale.get()
-
-        # size unit and above/below
-        # self.label_size_unit = Label(master, text="Select size unit ")
-        # self.label_size_unit.grid(row=4, column=0)
         self.options_size = ['KB','MB', 'GB']
         self.unit_var = StringVar()
         self.unit_var.set('MB')
@@ -71,6 +63,7 @@ class AutoDel:
 
         desired_size_in_bytes = scale_value*UNITS[unit]
         loc = get_loc.replace("\\", "/")
+
         # check if location is valid
         if not os.path.isdir(loc):
             tkMessageBox.showinfo("Error", "Invalid folder location. Please enter location in the format shown in image!")
@@ -119,31 +112,28 @@ class AutoDel:
                         files_count += 1
                     except:
                         pass
-
-
         return files_count
 
-def make_menu(w):
-    global the_menu
-    the_menu = Menu(w, tearoff=0)
-    the_menu.add_command(label="Cut")
-    the_menu.add_command(label="Copy")
-    the_menu.add_command(label="Paste")
+    def make_menu(self, w):
+        self.the_menu = Menu(w, tearoff=0)
+        self.the_menu.add_command(label="Cut")
+        self.the_menu.add_command(label="Copy")
+        self.the_menu.add_command(label="Paste")
 
-
-def show_menu(e):
-    w = e.widget
-    the_menu.entryconfigure("Cut",
-                            command=lambda: w.event_generate("<<Cut>>"))
-    the_menu.entryconfigure("Copy",
-                            command=lambda: w.event_generate("<<Copy>>"))
-    the_menu.entryconfigure("Paste",
-                            command=lambda: w.event_generate("<<Paste>>"))
-    the_menu.tk.call("tk_popup", the_menu, e.x_root, e.y_root)
+    def show_menu(self, e):
+        w = e.widget
+        self.the_menu.entryconfigure("Cut",
+	                            command=lambda: w.event_generate("<<Cut>>"))
+        self.the_menu.entryconfigure("Copy",
+	                            command=lambda: w.event_generate("<<Copy>>"))
+        self.the_menu.entryconfigure("Paste",
+	                            command=lambda: w.event_generate("<<Paste>>"))
+        self.the_menu.tk.call("tk_popup", self.the_menu, e.x_root, e.y_root)
 
 
 root = Tk()
-make_menu(root)
+
 root.iconbitmap(ICON)
 my_gui = AutoDel(root)
+my_gui.make_menu(root)
 root.mainloop()
