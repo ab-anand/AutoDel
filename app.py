@@ -115,12 +115,14 @@ class AutoDel:
         return files_count
 
     def make_menu(self, w):
+        ''' creating cut/copy/paste menu'''
         self.the_menu = Menu(w, tearoff=0)
         self.the_menu.add_command(label="Cut")
         self.the_menu.add_command(label="Copy")
         self.the_menu.add_command(label="Paste")
 
     def show_menu(self, e):
+        ''' showing the cut/copy/paste menu'''
         w = e.widget
         self.the_menu.entryconfigure("Cut",
 	                            command=lambda: w.event_generate("<<Cut>>"))
