@@ -18,6 +18,7 @@ class AutoDel:
 
         self.entry_loc = Entry(master, width=27)
         self.entry_loc.grid(row=0, column=1, pady=10, sticky=W)
+        self.entry_loc.bind_class("Entry", "<Button-3><ButtonRelease-3>", show_menu)
 
         self.label_ex_loc = Label(master, text="Example of a folder location >>")
         self.label_ex_loc.grid(row=1, column=0)
@@ -122,10 +123,27 @@ class AutoDel:
 
         return files_count
 
+def make_menu(w):
+    global the_menu
+    the_menu = Menu(w, tearoff=0)
+    the_menu.add_command(label="Cut")
+    the_menu.add_command(label="Copy")
+    the_menu.add_command(label="Paste")
 
+
+def show_menu(e):
+    w = e.widget
+    the_menu.entryconfigure("Cut",
+                            command=lambda: w.event_generate("<<Cut>>"))
+    the_menu.entryconfigure("Copy",
+                            command=lambda: w.event_generate("<<Copy>>"))
+    the_menu.entryconfigure("Paste",
+                            command=lambda: w.event_generate("<<Paste>>"))
+    the_menu.tk.call("tk_popup", the_menu, e.x_root, e.y_root)
 
 
 root = Tk()
+make_menu(root)
 root.iconbitmap(ICON)
 my_gui = AutoDel(root)
 root.mainloop()
