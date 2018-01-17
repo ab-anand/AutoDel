@@ -20,7 +20,7 @@
 ### Final step
 * Press delete button, within a second you'll get a notification like shown below
 
-![](c3.PNG)
+![](c3.png)
 
 
 
