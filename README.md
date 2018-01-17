@@ -3,6 +3,9 @@
 
 <i>A desktop app for WINDOWS OS to delete thousands of files in the blink of an eye using `size parameter`</i>
 
+## <i>View the demo here</i>
+[![AutoDel | YouTube](youtube.png)](https://www.youtube.com/watch?v=_TdsV2ZFOqY)
+
 ## How to use
 * clone the repository `https://github.com/ab-anand/AutoDel.git`
 * `$ cd AutoDel`
@@ -28,6 +31,7 @@
 
 - [x] Add cut/copy/paste for filling location.
 - [x] Add `ALL FILES` option in dropdown
+- [x] Add time measure
 - [ ] Add documentation link and report for bugs option in the status bar.
 - [ ] Create an executable file
 - [ ] Finally integrate the v2 ideas
