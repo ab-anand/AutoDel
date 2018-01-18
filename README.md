@@ -1,7 +1,7 @@
 # AutoDel
 ![](Capture.PNG)
 
-<i>A desktop app for WINDOWS OS to delete thousands of files in the blink of an eye using `size parameter`</i>
+<b>A desktop app for WINDOWS OS to delete thousands of files in the blink of an eye using `size parameter`<i>(except all the <u>`Read-only`</u> files)</b>
 
 ## <i>View the demo here</i>
 [![AutoDel | YouTube](youtube.png)](https://www.youtube.com/watch?v=_TdsV2ZFOqY)
