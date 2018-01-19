@@ -10,6 +10,7 @@
 * clone the repository `https://github.com/ab-anand/AutoDel.git`
 * `$ cd AutoDel`
 * `$ pip install -r requirements.txt`
+* `$ python app.py`
 
 ## Instructions
 
