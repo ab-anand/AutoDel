@@ -22,7 +22,7 @@
 ![](c1.PNG)
 
 ### Final step
-* Press delete button, within a second you'll get a notification like shown below
+* Press `Delete Files!` button, soon you'll get a notification like shown below
 
 ![](c3.png)
 
