@@ -7,7 +7,7 @@
 [![AutoDel | YouTube](youtube.png)](https://www.youtube.com/watch?v=_TdsV2ZFOqY)
 
 ## How to use
-* clone the repository `https://github.com/ab-anand/AutoDel.git`
+* clone the repository `$ git clone https://github.com/ab-anand/AutoDel.git`
 * `$ cd AutoDel`
 * `$ pip install -r requirements.txt`
 * `$ python app.py`
