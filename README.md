@@ -3,7 +3,7 @@
 
 <b>A desktop app for WINDOWS OS to delete thousands of files in the blink of an eye using `size parameter`<i>(except all the <u>`Read-only`</u> files)</b>
 
-<b><i>It's fast, huh!</i><b>
+<b><i>It's fast, huh!</i></b>
   
 <img src="https://media.giphy.com/media/wz1FgPibXAJWg/giphy.gif"  width="900"/>
   
