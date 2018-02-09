@@ -43,3 +43,5 @@
 - [ ] Finally integrate the v2 ideas
 
 <b><i>Note - currently new features are being integrated.</i></b>
+
+<b><i> In case you end up deleting files mistakenly, you can recover it using [RECUVA](https://filehippo.com/download_recuva/)</i></b>
