@@ -38,12 +38,8 @@
 - [x] Add cut/copy/paste for filling location.
 - [x] Add `ALL FILES` option in dropdown
 - [x] Add time measure
-- [ ] Add documentation link and report for bugs option in the status bar.
-- [ ] Create an executable file
-- [ ] Finally integrate the v2 ideas
 
-<b><i>Note - currently new features are being integrated.</i></b>
 
-<b><i> In case you end up deleting files mistakenly, you can recover it using [RECUVA](https://filehippo.com/download_recuva/)</i></b>
+<b><i> In case you end up deleting files mistakenly, you can recover it using [RECUVA](https://filehippo.com/download_recuva/)(works for windows only)</i></b>
 
 <b><i> Liked it! Then don't forget to give it a star 🌟 </i></b>
