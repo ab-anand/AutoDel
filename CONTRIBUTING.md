@@ -2,13 +2,17 @@
 
 AUTODEL uses `Tkinter` for UI development and `PIL` for some other functionalities. You can contribute in many ways, from reporting bugs to adding features that you find suitable. Some ideas to contribute have been listed below.
 
-## Add `Report for bugs` link.
+
+
+
+## UI improvement.
 
 ### Difficulty: Easy
 
 ### Description: 
 
 You can improve the UI and add the a ‘Report for Bugs` link in the status bar. 
+
 
 
  ## Make it compatible with `LINUX`
@@ -20,6 +24,7 @@ You can improve the UI and add the a ‘Report for Bugs` link in the status bar.
 So far AUTODEL works on WINDOWS OS only. With some improvement you can make it compatible with other OS as well. All you need is to check the OS beforehand and  use the folder path format accordingly as WINDOWS and LINUX uses different folder formats.
 
 
+
 ## Ask for confirmation in the last step
 
 ### Difficulty: Easy – Medium
@@ -27,6 +32,7 @@ So far AUTODEL works on WINDOWS OS only. With some improvement you can make it c
 ### Description: 
 
 Once the user clicks on ` Delete Files!` button you need to provide a confirmation step to the user and then take decisions accordingly(whether to delete the files or not)
+
 
 
 ## Improve Performance
@@ -40,10 +46,12 @@ The logic implementation or the coding part has been done in a layman way. Thoug
 Check this [video](https://www.youtube.com/watch?v=07-K4LFhBMc) 
 
 
+
 ## Your very own Idea 
 
-## Description: 
+### Description: 
 You can add any other features that you want in `AUTODEL` :D
+
 
 
 * <b>NOTE:<b/> Before contributing make sure you have gone through the [documentation](README.md)
