@@ -1,6 +1,6 @@
 # <b>Contributing to AUTODEL</b>
 
-AUTODEL uses `Tkinter` for UI development and `PIL` for some other functionalities. You can contribute in many ways, from reporting bugs to adding features that you find suitable. Some ideas to contribute have been listed below.
+`AUTODEL` uses `Tkinter` for UI development and `PIL` for some other functionalities. You can contribute in many ways, from reporting bugs to adding features that you find suitable. Some ideas to contribute have been listed below.
 
 
 
@@ -11,7 +11,7 @@ AUTODEL uses `Tkinter` for UI development and `PIL` for some other functionaliti
 
 ### Description: 
 
-You can improve the UI and add the a ‘Report for Bugs` link in the status bar. 
+You can improve the UI and add the a `Report for Bugs` link in the status bar. 
 
 
 
@@ -21,7 +21,7 @@ You can improve the UI and add the a ‘Report for Bugs` link in the status bar.
 
 ### Description:
 
-So far AUTODEL works on WINDOWS OS only. With some improvement you can make it compatible with other OS as well. All you need is to check the OS beforehand and  use the folder path format accordingly as WINDOWS and LINUX uses different folder formats.
+So far `AUTODEL` works on `WINDOWS OS` only. With some improvement you can make it compatible with other OS as well. All you need is to check the OS beforehand and  use the folder path format accordingly as `WINDOWS` and `LINUX` uses different folder formats.
 
 
 
@@ -35,7 +35,7 @@ Once the user clicks on ` Delete Files!` button you need to provide a confirmati
 
 
 
-## Improve Performance
+## Improve Performance!
 
 ### Difficulty: Medium – Hard 
 
