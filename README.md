@@ -44,4 +44,4 @@
 
 <b><i> Liked it! Then don't forget to give it a star 🌟 </i></b>
 
-<b><i> Feel like contributing? Check the [Contribution guidelines](CONTRIBUTING.md)
+<b><i> Feel like contributing? Check the [Contribution guidelines](CONTRIBUTING.md)</i></b>

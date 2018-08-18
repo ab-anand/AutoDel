@@ -11,11 +11,11 @@
 
 ### Description: 
 
-You can improve the UI and add the a `Report for Bugs` link in the status bar. 
+You can improve the UI and add a `Report for Bugs` link in the status bar. 
 
 
 
- ## Make it compatible with `LINUX`
+ ## Make it compatible with LINUX
 
 ### Difficulty: Easy – Medium
 
