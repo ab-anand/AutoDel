@@ -1,4 +1,4 @@
-# <b>Contributing to AUTODEL<b>
+# <b>Contributing to AUTODEL</b>
 
 AUTODEL uses `Tkinter` for UI development and `PIL` for some other functionalities. You can contribute in many ways, from reporting bugs to adding features that you find suitable. Some ideas to contribute have been listed below.
 
@@ -11,7 +11,7 @@ AUTODEL uses `Tkinter` for UI development and `PIL` for some other functionaliti
 You can improve the UI and add the a ‘Report for Bugs` link in the status bar. 
 
 
- ## Make it compatible with LINUX
+ ## Make it compatible with `LINUX`
 
 ### Difficulty: Easy – Medium
 
@@ -46,4 +46,4 @@ Check this [video](https://www.youtube.com/watch?v=07-K4LFhBMc)
 You can add any other features that you want in `AUTODEL` :D
 
 
-* <b>NOTE:<b> Before contributing make sure you have gone through the [documentation](README.md)
+* <b>NOTE:<b/> Before contributing make sure you have gone through the [documentation](README.md)
