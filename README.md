@@ -1,5 +1,5 @@
 # AutoDel
-![App Preview](Capture.PNG)
+![App Preview](Images/Capture.PNG)
 
 <b>A desktop app for WINDOWS OS to delete thousands of files in the blink of an eye using `size parameter`<i>(except all the <u>`Read-only`</u> files)</b>
 
@@ -9,7 +9,7 @@
   
   
 ## <i>View the demo here</i>
-[![AutoDel | YouTube](youtube.png)](https://www.youtube.com/watch?v=_TdsV2ZFOqY)
+[![AutoDel | YouTube](Images/youtube.png)](https://www.youtube.com/watch?v=_TdsV2ZFOqY)
 
 ## How to use
 * clone the repository `$ git clone https://github.com/ab-anand/AutoDel.git`
@@ -24,12 +24,12 @@
 
 ### Step 2
 * Select a file size and unit i.e., MB, KB, GB if you want a threshold value or simply select `All Files` to delete all files.
-![](c1.PNG)
+![](Images/c1.PNG)
 
 ### Final step
 * Press `Delete Files!` button, soon you'll get a notification like shown below
 
-![](c3.png)
+![](Images/c3.png)
 
 
 
