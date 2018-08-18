@@ -4,8 +4,8 @@ import tkMessageBox
 import os
 
 # setting various parameters
-ICON = 'page.ico'
-IMAGE = Image.open("location.png")
+ICON = 'Images/page.ico'
+IMAGE = Image.open("Images/location.png")
 UNITS = {"MB": 2**20, "KB": 2**10, "GB": 2**30}
 
 class AutoDel:
